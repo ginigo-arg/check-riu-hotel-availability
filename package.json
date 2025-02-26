@@ -1,0 +1,28 @@
+{
+  "name": "riu-availability-checker",
+  "version": "1.0.0",
+  "description": "Verificador de disponibilidad para Hotel Riu Tequila",
+  "main": "checkRiuAvailability.js",
+  "scripts": {
+    "dev": "node checkRiuAvailability.js",
+    "start": "pm2 start ecosystem.config.js",
+    "stop": "pm2 stop riu-checker",
+    "restart": "pm2 restart riu-checker",
+    "logs": "pm2 logs riu-checker",
+    "monitor": "pm2 monit",
+    "delete": "pm2 delete riu-checker"
+  },
+  "keywords": [
+    "scraping",
+    "riu",
+    "hotel"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^21.0.0",
+    "user-agents": "^1.0.1144",
+    "nodemailer": "^6.9.0",
+    "dotenv": "^16.0.3"
+  }
+}

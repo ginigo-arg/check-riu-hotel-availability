@@ -1,0 +1,5 @@
+node_modules/
+resultado.png
+.env 
+error-*.log
+out-*.log
